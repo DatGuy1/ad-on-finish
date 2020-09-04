@@ -1,4 +1,4 @@
-// nodejs
+// nodejs. requires gamestate integration file pointing to the server this file is running on. default port 5000, can be changed in line 7
 // assuming all necessary variables already exist. just a very, very simple poc
 
 // this one's already tried and tested for dota2. csgo should work pretty much the same maybe very minor changes are needed
