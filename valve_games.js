@@ -34,4 +34,4 @@ server.events.on('newclient', function(client) {
             }
         });
     })
-};
+});
