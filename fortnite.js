@@ -17,7 +17,7 @@ let fortniteAPI = new Fortnite(
     ]
 );
 
-// Create timer with 
+// Create timer checking every 10 seconds for a new game
 let checkTimer = setInterval(function() { checkNewGames() }, 10000);
 let oldMatches = -1;
 
@@ -31,6 +31,8 @@ function checkNewGames() {
                 oldMatches = stats.lifetimeStats.matches;
                 return;
             }
+
+            // If old matches isn't the same as the matches we just found
             if (stats.lifetimeStats.matches !== oldMatches) {
                 oldMatches = stats.lifetimeStats.matches;
                 axios({
